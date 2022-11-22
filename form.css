@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    display: flex;
+    justify-content: space-between;    
+} 
+h1{
+    width: 5px;
+   margin: 45px;
+   color: yellow;
+}
+
+nav ul{
+    display: flex;
+    margin: 70px;
+} 
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin:80px;
+    font-weight: bold; 
+    font-size:20px; 
+}    
+#paragraf{
+    background-color:aquamarine;
+    height: 50vh;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
+fieldset{
+    padding: 20px;
+    margin-top: 2%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+fieldset p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+h3{
+    margin-top: 3%;
+    margin-right: 10%;
+}
+#submit{
+    padding: 0.01%;
+    margin-left:90px;
+    margin-top: 50px;
+    font-size: 50px;
+    color: yellow;
+  
+}
+#error5
+{
+    color: red;
+}
+#error7
+{
+    color: red;
+}
+#error8
+{
+    color: red;
+}
+#error1
+{
+    color: red;
+}
+#error2
+{
+    color: red;
+}
+#error3
+{
+    color: red;
+}
+#nom{
+   width: 500px;
+   height: 50px;
+   border-radius: 20px;
+}
+#prenom{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+
+ }
+ #email{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+
+ }
+
+ #tele{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+ }
+label{
+  font-size:20px;
+}
+#clubs{
+    font-size: 20px;
+}

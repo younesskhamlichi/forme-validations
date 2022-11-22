@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicode - Formulaire d'inscription aux Clubs Parascolaires</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <main>
+        <!-- Navigation -->
+        <header>
+            <div>
+                <h1>JS SOLICOD</h1>
+            </div>
+            <nav id="nav1">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Activités</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="">contact vous</a></li>
+                </ul>
+            </nav>  
+        </header>
+
+        <!-- Description -->
+        <section id="paragraf">
+            <p>merci de biens remplir les formations. vous recevrez une email de confirmations</p>
+        </section>
+
+        <!-- Form -->
+        <form id="form1">
+            <fieldset style="margin-top: 40px;">
+                <legend>INSCRIPTION</legend>
+                
+                <!-- Nom -->
+                <input type="text" placeholder="Entrez votre Nom" id="nom" onkeyup="validName(this)"/>
+                <p id="error1"></p>
+                
+                <!-- Prénom -->
+                <input type="text" id="prenom" placeholder="Entrez votre Prénom" onkeyup="validPrenom(this)"/>
+                <p id="error2"></p>
+                
+                <!-- Email -->
+                <input type="email" placeholder="prenom.nom@ofppt.ma" id="email" onkeyup="validEmail(this)"/>
+                <p id="error3"></p>
+                
+                <!-- Téléphone -->
+                <input type="text" id="tele" placeholder="Entrez votre Télephone" onkeyup="validTell(this)"/>
+                <p id="error4"></p>
+
+                <!-- Genre -->
+                <h3 style="margin: 20px ;">Genre :</h3>
+                <label for="Féminin"><input type="radio" name="genre" value="Féminin"  id="Féminin">Féminin</label>
+                <label for="Masculin"><input type="radio" name="genre" value="Masculin" id="Masculin">Masculin</label>
+                <p id="error5"></p>
+                
+                <!-- Groupes -->
+                <h3 style="margin: 20px ;"  id="groub">Groupe :</h3>
+                <label for=""><input type="radio" name="groupe" value="onchenge " >DW101</label>
+                <label for=""><input type="radio" name="groupe" value="onchenge " >DW102</label>
+                <label for=""><input type="radio" name="groupe" value="onchenge " > DW103</label>
+                <label for=""><input type="radio" name="groupe" value="onchenge " >DM101</label>
+                <label for=""><input type="radio" name="groupe" value="onchenge " >DM102</label>
+                <p  id="error7"></p>
+            
+                <!-- Clubs -->
+                <h3 style="margin: 20px ;">Club(s) :</h3>
+                <select id="clubs" multiple="multiple">
+                    <option value="Informatique">Informatique</option>
+                    <option value="Robotique">Robotique</option>
+                    <option value="Jeu d'échecs">Jeu d'échecs</option>
+                    <option value="Musique">Musique</option>
+                    <option value="Foot">Foot</option>
+                    <option value="Théatre">Théatre</option>
+                </select>
+                <p id="error8"></p>
+            
+                <!-- Bouton -->
+                
+                    <input type="submit" value="Valider" id="submit">
+              
+            </fieldset>
+        </form>
+    </main>
+    <script src="validation.js"></script>
+</body>
+</html>
